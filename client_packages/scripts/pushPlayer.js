@@ -1,11 +1,25 @@
-// Punkt - Verbandskasten ziehen 
-mp.keys.bind(0xBE, false, () => {
 
-    mp.events.callRemote("Weste");
+
+						// Komma - Verbandskasten ziehen 
+	mp.keys.bind(0xBC, true, () => {
+
+	setTimeout(function () {
+           mp.events.callRemote("Verband");
+        }, 5000);
+
+    	
 });
 
-// Komma - Weste ziehen 
-mp.keys.bind(0xBC, false, () => {
 
-    mp.events.callRemote("Verband");
+
+
+						// Punkt - Weste ziehen 
+
+	mp.keys.bind(0xBE, true, () => {
+
+	setTimeout(function () {
+           mp.events.callRemote("Weste");
+        }, 5000);
+
+    	
 });
